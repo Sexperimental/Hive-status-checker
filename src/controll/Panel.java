@@ -9,7 +9,6 @@ import util.model.StringUtil;
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 import java.awt.*;
-import java.util.List;
 
 public class Panel {
 
