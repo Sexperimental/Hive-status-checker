@@ -1,2 +1,3 @@
 # Hive-status-checker
-Show hive status
+・need java <br>
+https://www.java.com/ja/download/
