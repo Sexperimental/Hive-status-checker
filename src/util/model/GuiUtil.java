@@ -29,13 +29,4 @@ public class GuiUtil {
         button.addActionListener(action);
         return button;
     }
-
-    public static JScrollPane createListBox(String[] items, int x, int y, int width, int height) {
-        JList<String> listBox = new JList<>(items);
-        listBox.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        JScrollPane scrollPane = new JScrollPane(listBox);
-        scrollPane.setBounds(x, y, width, height);
-        return scrollPane;
-    }
-
 }
