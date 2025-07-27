@@ -25,7 +25,7 @@ public class Panel {
     private static JLabel infomationLabel, equipped_hub_titleLabel;
 
     public static void initialize(JFrame frame) {
-        JLabel authorLabel = GuiUtil.createLabel("<html><b>Author</b>: sexperimental - 07/18</html>", 15, 13, 200, 25);
+        JLabel authorLabel = GuiUtil.createLabel("<html><b>Author</b>: sexperimental - 07/18</html>", 20, 14, 200, 25);
         JLabel authorBoarder1 = GuiUtil.createLabel("----------------------------------", 15, 27, 300, 25);
         JLabel authorBoarder2 = GuiUtil.createLabel("----------------------------------", 15, -2, 300, 25);
 
