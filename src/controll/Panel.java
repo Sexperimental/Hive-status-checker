@@ -43,7 +43,7 @@ public class Panel {
                 + "<b>Friends:</b>  " + "0"
                 + "</html>"
                 , 35, 80, 10000, 25);
-        equipped_hub_titleLabel = GuiUtil.createLabel("<html><b>Equipped hub title:  </b>none</html>", 35, 105, 10000, 25);
+        equipped_hub_titleLabel = GuiUtil.createLabel("<html><b>Equipped hub title:  </b>none</html>", 35, 108, 10000, 25);
 
         JButton checkButton = GuiUtil.createButton("check", 430, 13, 80, 24, e -> {
             String json = ApiUtil.getJson(usernameField.getText());
