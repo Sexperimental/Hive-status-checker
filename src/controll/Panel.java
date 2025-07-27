@@ -42,8 +42,8 @@ public class Panel {
                 + "<b>Backblings:</b>  " + "0" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
                 + "<b>Friends:</b>  " + "0"
                 + "</html>"
-                , 25, 80, 10000, 25);
-        equipped_hub_titleLabel = GuiUtil.createLabel("<html><b>Equipped hub title:  </b>none</html>", 25, 105, 10000, 25);
+                , 35, 80, 10000, 25);
+        equipped_hub_titleLabel = GuiUtil.createLabel("<html><b>Equipped hub title:  </b>none</html>", 35, 105, 10000, 25);
 
         JButton checkButton = GuiUtil.createButton("check", 430, 13, 80, 24, e -> {
             String json = ApiUtil.getJson(usernameField.getText());
@@ -139,7 +139,7 @@ public class Panel {
         title1.setTitleFont(new Font("SansSerif", Font.BOLD, 12));
         JLabel titledBoarder1 = new JLabel();
         titledBoarder1.setBorder(title1);
-        titledBoarder1.setBounds(15, 50, 700, 500);
+        titledBoarder1.setBounds(15, 50, 720, 500);
 
         frame.add(authorLabel);
         frame.add(authorBoarder1);
@@ -153,7 +153,7 @@ public class Panel {
         String[] titleLabels = {"Game name", "Played", "Win", "Lose", "Kill", "Death", "K/D", "Win-rate"};
         headerLabels = new JLabel[titleLabels.length];
         for (int i = 0; i < titleLabels.length; i++) {
-            headerLabels[i] = GuiUtil.createLabel(titleLabels[i], 25 + i * 90, 140, 80, 25);
+            headerLabels[i] = GuiUtil.createLabel(titleLabels[i], 35 + i * 90, 140, 80, 25);
             Font currentFont = headerLabels[i].getFont();
             headerLabels[i].setFont(new Font(currentFont.getName(), Font.BOLD, currentFont.getSize()));
             frame.add(headerLabels[i]);
@@ -162,63 +162,63 @@ public class Panel {
         String[] bedLabels = {"<html><b>Bedwars</b></html>", "0", "0", "0", "0", "0", "0.00", "0.00%"};
         bedwarsLabels = new JLabel[bedLabels.length];
         for (int i = 0; i < bedLabels.length; i++) {
-            bedwarsLabels[i] = GuiUtil.createLabel(bedLabels[i], 25 + i * 90, 180, 80, 25);
+            bedwarsLabels[i] = GuiUtil.createLabel(bedLabels[i], 35 + i * 90, 180, 80, 25);
             frame.add(bedwarsLabels[i]);
         }
 
         String[] skyLabels = {"<html><b>Skywars</b></html>", "0", "0", "0", "0", "0", "0.00", "0.00%"};
         skywarsLabels = new JLabel[skyLabels.length];
         for (int i = 0; i < skyLabels.length; i++) {
-            skywarsLabels[i] = GuiUtil.createLabel(skyLabels[i], 25 + i * 90, 220, 80, 25);
+            skywarsLabels[i] = GuiUtil.createLabel(skyLabels[i], 35 + i * 90, 220, 80, 25);
             frame.add(skywarsLabels[i]);
         }
 
         String[] msLabels = {"<html><b>Murder</b></html>", "0", "0", "0", "0", "0", "0.00", "0.00%"};
         murderLabels = new JLabel[msLabels.length];
         for (int i = 0; i < bedLabels.length; i++) {
-            murderLabels[i] = GuiUtil.createLabel(msLabels[i], 25 + i * 90, 260, 80, 25);
+            murderLabels[i] = GuiUtil.createLabel(msLabels[i], 35 + i * 90, 260, 80, 25);
             frame.add(murderLabels[i]);
         }
 
         String[] sgLabels = {"<html><b>Survival</b></html>", "0", "0", "0", "0", "0", "0.00", "0.00%"};
         survivalLabels = new JLabel[sgLabels.length];
         for (int i = 0; i < bedLabels.length; i++) {
-            survivalLabels[i] = GuiUtil.createLabel(sgLabels[i], 25 + i * 90, 300, 80, 25);
+            survivalLabels[i] = GuiUtil.createLabel(sgLabels[i], 35 + i * 90, 300, 80, 25);
             frame.add(survivalLabels[i]);
         }
 
         String[] hideLabels = {"<html><b>HideAndSeek</b></html>", "0", "0", "0", "0", "0", "0.00", "0.00%"};
         hideAndSeekLabels = new JLabel[hideLabels.length];
         for (int i = 0; i < bedLabels.length; i++) {
-            hideAndSeekLabels[i] = GuiUtil.createLabel(hideLabels[i], 25 + i * 90, 340, 80, 25);
+            hideAndSeekLabels[i] = GuiUtil.createLabel(hideLabels[i], 35 + i * 90, 340, 80, 25);
             frame.add(hideAndSeekLabels[i]);
         }
 
         String[] dsLabels = {"<html><b>DeathRun</b></html>", "0", "0", "0", "0", "0", "0.00", "0.00%"};
         deathRunLabels = new JLabel[dsLabels.length];
         for (int i = 0; i < bedLabels.length; i++) {
-            deathRunLabels[i] = GuiUtil.createLabel(dsLabels[i], 25 + i * 90, 380, 80, 25);
+            deathRunLabels[i] = GuiUtil.createLabel(dsLabels[i], 35 + i * 90, 380, 80, 25);
             frame.add(deathRunLabels[i]);
         }
 
         String[] bbLables = {"<html><b>BuildBattle</b></html>", "0", "0", "0", "0", "0", "0.00", "0.00%"};
         buildBattleLabels = new JLabel[dsLabels.length];
         for (int i = 0; i < bedLabels.length; i++) {
-            buildBattleLabels[i] = GuiUtil.createLabel(bbLables[i], 25 + i * 90, 420, 80, 25);
+            buildBattleLabels[i] = GuiUtil.createLabel(bbLables[i], 35 + i * 90, 420, 80, 25);
             frame.add(buildBattleLabels[i]);
         }
 
         String[] ctfLables = {"<html><b>CTF</b></html>", "0", "0", "0", "0", "0", "0.00", "0.00%"};
         captureTheFlagLabels = new JLabel[ctfLables.length];
         for (int i = 0; i < bedLabels.length; i++) {
-            captureTheFlagLabels[i] = GuiUtil.createLabel(ctfLables[i], 25 + i * 90, 460, 80, 25);
+            captureTheFlagLabels[i] = GuiUtil.createLabel(ctfLables[i], 35 + i * 90, 460, 80, 25);
             frame.add(captureTheFlagLabels[i]);
         }
 
         String[] bglabels = {"<html><b>Bridge</b></html>", "0", "0", "0", "0", "0", "0.00", "0.00%"};
         bridgeLabels = new JLabel[bglabels.length];
         for (int i = 0; i < bedLabels.length; i++) {
-            bridgeLabels[i] = GuiUtil.createLabel(bglabels[i], 25 + i * 90, 500, 80, 25);
+            bridgeLabels[i] = GuiUtil.createLabel(bglabels[i], 35 + i * 90, 500, 80, 25);
             frame.add(bridgeLabels[i]);
         }
     }
