@@ -16,7 +16,7 @@ public class Main {
 
     private static JFrame createMainFrame() {
         JFrame frame = new JFrame();
-        frame.setSize(750, 605);
+        frame.setSize(767, 605);
         frame.setLayout(null);
         frame.setTitle("Hive status checker");
         frame.setResizable(false);
