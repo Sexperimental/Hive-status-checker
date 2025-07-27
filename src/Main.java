@@ -9,19 +9,16 @@ public class Main {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             FlatDarkLaf.setup();
-            JFrame frame = createMainFrame();
+
+            JFrame frame = new JFrame();
+            frame.setSize(767, 605);
+            frame.setLayout(null);
+            frame.setTitle("Hive status checker");
+            frame.setResizable(false);
+            GuiUtil.centerWindow(frame);
+            frame.setVisible(true);
+
             Panel.initialize(frame);
         });
-    }
-
-    private static JFrame createMainFrame() {
-        JFrame frame = new JFrame();
-        frame.setSize(767, 605);
-        frame.setLayout(null);
-        frame.setTitle("Hive status checker");
-        frame.setResizable(false);
-        GuiUtil.centerWindow(frame);
-        frame.setVisible(true);
-        return frame;
     }
 }

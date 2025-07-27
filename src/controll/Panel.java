@@ -12,7 +12,6 @@ import java.awt.*;
 
 public class Panel {
 
-    private static JLabel[] headerLabels;
     private static JLabel[] bedwarsLabels;
     private static JLabel[] skywarsLabels;
     private static JLabel[] murderLabels;
@@ -43,6 +42,7 @@ public class Panel {
                 + "<b>Friends:</b>  " + "0"
                 + "</html>"
                 , 35, 80, 10000, 25);
+
         equipped_hub_titleLabel = GuiUtil.createLabel("<html><b>Equipped hub title:  </b>none</html>", 35, 108, 10000, 25);
 
         JButton checkButton = GuiUtil.createButton("check", 430, 13, 80, 24, e -> {
@@ -151,7 +151,7 @@ public class Panel {
         frame.add(equipped_hub_titleLabel);
 
         String[] titleLabels = {"Game name", "Played", "Win", "Lose", "Kill", "Death", "K/D", "Win-rate"};
-        headerLabels = new JLabel[titleLabels.length];
+        JLabel[] headerLabels = new JLabel[titleLabels.length];
         for (int i = 0; i < titleLabels.length; i++) {
             headerLabels[i] = GuiUtil.createLabel(titleLabels[i], 35 + i * 90, 140, 80, 25);
             Font currentFont = headerLabels[i].getFont();
