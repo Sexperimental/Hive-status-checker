@@ -3,3 +3,8 @@
 https://www.java.com/ja/download/ <br>
 ・need JDK for build <br>
 https://www.oracle.com/jp/java/technologies/downloads/
+<br>
+<br>
+# Credit <br>
+・Flatlaf library <br>
+https://www.formdev.com/flatlaf/
